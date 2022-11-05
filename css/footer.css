@@ -1,0 +1,59 @@
+/* --------------==========- Footer Styling --------------- */
+
+
+footer {
+    margin-top: 150px;
+    /* border: 3px solid red; */
+}
+
+.parent_footer {
+    /* border: 3px solid green; */
+    max-width: 95rem;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    background-color: var(--footer-background);
+}
+
+.footer_svg {
+    /* border: 1px solid sandybrown; */
+    position: absolute;
+    bottom: 140px;
+    width: 100%;
+}
+
+
+
+.footer_svg path {
+    fill: var(--footer-background);
+}
+
+.section_test {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid rgb(5, 109, 91); */
+}
+
+
+
+.section_ul {
+    /* border: 1PX SOLID black; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 2;
+    width: 600px;
+}
+
+
+
+.section_ul .section_li {
+    position: relative;
+    list-style: none;
+    margin: 0 10px;
+}

@@ -1,0 +1,145 @@
+/* service ===================================*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+
+}
+
+.service .service-item {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+
+}
+
+.service .service-item .service-item-inner {
+    background-color: var(--bg-color-2);
+    border: 1px solid var(--bg-black-50);
+    border-bottom: 3px solid rgb(95, 4, 192);
+    border-radius: 10px 10px 6px 6px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    margin: 10px;
+
+}
+
+.service .service-item .service-item-inner:hover {
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.service .service-item .service-item-inner .icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.service .service-item .service-item-inner .icon .fa {
+    font-size: 40px;
+    line-height: 60px;
+    color: rgb(95, 4, 192);
+    transition: all 0.6s ease;
+}
+
+.service .service-item .service-item-inner:hover .icon {
+    /* background-color: rgb(95, 4, 192); */
+    background-image: linear-gradient(50deg, rgb(64, 0, 255), rgb(101, 2, 167) 70%);
+}
+
+.service .service-item .service-item-inner:hover .icon .fa {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.service .service-item .service-item-inner h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    font-family: 'Poppins';
+}
+
+.service .service-item .service-item-inner p {
+    color: var(--text-black-700);
+    font-family: 'Poppins';
+    line-height: 25px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+@media (max-width:991px) {
+    .service .service-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width:767px) {
+    .service .service-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* --------------- Sevices Section Styling --------------- */
+.services .container {
+    display: grid;
+    /* grid-template-columns: 1fr 1.3fr;
+    column-gap: 6rem; */
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+.parent-color-service {
+    max-width: 85rem;
+    position: relative;
+    margin: auto;
+}
+
+.services-card {
+    /* border: 1px solid rgba(255, 0, 0, 0.6); */
+    margin-top: 60px;
+}
+
+
+.milestones {
+    display: grid;
+    width: 40%;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    /* border: 1px solid rgba(255, 0, 0, 0.6); */
+    margin: auto;
+    margin-top: 50px;
+
+}
+
+.milestones h2 {
+    color: var(--main-color-1);
+    font-size: 1.3rem;
+    transition: .3s color;
+}
+
+.milestones h2 span {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-right: .1rem;
+    transition: .3s color;
+}
+
+.milestones h5 {
+    color: var(--heading-color);
+    line-height: .9;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: .3s color;
+}

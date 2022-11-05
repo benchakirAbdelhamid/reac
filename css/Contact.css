@@ -1,0 +1,143 @@
+/* --------------- Contact Section Styling --------------- */
+.contact .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    padding: 5rem 0;
+}
+
+
+.mail {
+    color: var(--main-color-1);
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: .3s;
+}
+
+.mail i {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-left: 2px;
+    transform: translateY(3px);
+    transition: .3s margin-left;
+}
+
+.mail:hover {
+    color: var(--main-color-dark-1);
+}
+
+.mail:hover i {
+    margin-left: 10px;
+}
+
+/* ====================================== */
+.contact-form {
+    padding: 3.5rem 3rem 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    transition: .3s background-color;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px var(--box-sadow);
+    border: 1px solid var(--border);
+    border-right: 1px solid var(--border-right);
+    border-bottom: 1px solid var(--border-bottom);
+    background: var(--background);
+}
+
+
+.contact-form h3 {
+    color: var(--heading-color);
+    /* color: white; */
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 1.6rem;
+    line-height: 0.9;
+    transition: .3s color;
+}
+
+.form-input {
+    display: inline-block;
+    padding: .9rem 1.5rem;
+    background-color: var(--bg-color-3);
+    border: 2px solid var(--bg-color-3);
+    width: 100%;
+    border-radius: 17px;
+    font-family: inherit;
+    font-size: .85rem;
+    font-weight: 500;
+    color: var(--heading-color);
+    outline: none;
+    border: none;
+    background: var(--background);
+    transition: 0.3s;
+    border: 1px solid var(--border);
+    border-right: 1px solid var(--border-right);
+    border-bottom: 1px solid var(--border-bottom);
+    box-shadow: 0 5px 15px var(--box-shadow);
+    border-radius: 35px;
+}
+
+.inputBox input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid var(--border);
+    border-right: 1px solid var(--border-right);
+    border-bottom: 1px solid var(--border-bottom);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
+    box-shadow: 0 5px 15px var(--box-shadow);
+}
+
+.inputBox input[type="submit"] {
+    background: #fff;
+    color: #666;
+    max-width: 100px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+
+.form-input::placeholder {
+    color: var(--c);
+}
+
+.form-input:hover {
+    filter: brightness(97%);
+}
+
+.form-input:valid,
+.form-input:focus {
+    filter: brightness(100%);
+    border-color: rgb(188, 168, 237);
+    box-shadow: 0 0 1px 1px rgba(123, 0, 255, 0.802);
+}
+
+textarea.form-input {
+    resize: none;
+    min-height: 170px;
+}
+
+.contact-form .form-input {
+    margin-bottom: 1.5rem;
+}
+
+.contact .square {
+    position: absolute;
+    left: 15%;
+    bottom: 15%;
+    transform: translate(-50%, -50%);
+}
+
+.contact .triangle {
+    position: absolute;
+    left: 90%;
+    top: 98%;
+    transform: translate(-50%, -50%);
+}
